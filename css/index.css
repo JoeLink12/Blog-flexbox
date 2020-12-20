@@ -1,0 +1,206 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body
+{
+  font-family: "Lato", sans-serif;
+  background: url(../img/2FF.jpg);
+  background-attachment: fixed;
+}
+
+.contenedor
+{
+  margin: auto;
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+header
+{
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .menu a
+{
+  color: #fff;
+  text-decoration: none;
+  margin-right: 40px;
+  font-size: 18px;
+}
+
+header .menu a:hover
+{
+  text-decoration: underline;
+}
+
+.logo img
+{
+  height: 100px;
+  width: 100px;
+}
+
+.main
+{
+  padding: 20px;
+  width: 70%;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.main article .imagen
+{
+  margin-bottom: 20px;
+}
+
+.main article .imagen img
+{
+  width: 100%;
+  vertical-align: top;
+}
+
+.main article h2
+{
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 32px;
+}
+
+.main article p
+{
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+aside
+{
+  width: 30%;
+  background: #3C69B4;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+aside .ad
+{
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  padding: 50px 0;
+  background: #2a4778;
+}
+
+footer
+{
+  margin: 20px 0;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  width: 100%;
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+footer .redes-sociales a
+{
+  text-decoration: none;
+  color: #000;
+  margin-left: 20px;
+}
+
+footer .redes-sociales a:hover
+{
+  text-decoration: underline;
+}
+
+/*Media Querys*/
+
+@media screen and (max-width: 800px)
+{
+  .main
+  {
+    width: 100%;
+  }
+  aside
+  {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  aside .ad
+  {
+    width: 40%;
+  }
+  footer
+  {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px)
+{
+  header
+  {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  header .menu
+  {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+  }
+  header .menu a
+  {
+    color: #000;
+    margin: 0 20px;
+  }
+  header .logo
+  {
+    margin-bottom: 20px;
+  }
+  footer
+  {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .autor
+  {
+    order: 2;
+  }
+  footer .redes-sociales
+  {
+    order: 1;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 400px)
+{
+  header .menu a
+  {
+    margin: 0 12px;
+  }
+  aside
+  {
+    display: none;
+  }
+}
